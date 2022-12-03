@@ -2,22 +2,34 @@
 
 .creations-grid {
   display: grid;
+
+  @include u.breakpoints-up(large) {
+    grid-template-columns: repeat(4, 1fr);
+  }
   gap: u.rem(25);
 }
 
-/* .nav-footer__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, u.rem(40));
-  place-items: center;
-
-  // gap: u.rem(13.008);
-  gap: 6.5rem;
-
-  grid-template-areas:
-    "logo"
-    "list"
-    "social"
-    "copyright";
+.virtual-reality {
+  @include u.breakpoints-up(large) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
- */
+
+.nav-footer__grid {
+  @include u.breakpoints-up(large) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 75px;
+    grid-template-areas: "left-items right-items";
+    gap: 47%;
+  }
+
+  div.left-items {
+    grid-area: left-items;
+  }
+
+  div.right-items {
+    grid-area: right-items;
+  }
+}

@@ -17,21 +17,27 @@ footer {
 .nav-footer {
   padding-top: u.rem(46);
   text-align: center;
-  //   padding-bottom: u.rem(30);
+
+  @include u.breakpoints-up(large) {
+    text-align: left;
+  }
 
   &__grid {
-    .footer-logo {
-      grid-area: logo;
-    }
-
     .list {
       margin-top: u.rem(30);
-      grid-area: list;
+
+      @include u.breakpoints-up(large) {
+        margin-top: u.rem(22);
+      }
 
       ul {
         li {
           &:not(:last-child) {
             padding-bottom: u.rem(20);
+
+            @include u.breakpoints-up(large) {
+              padding-bottom: 0;
+            }
           }
         }
       }
@@ -39,7 +45,12 @@ footer {
 
     &-social-links {
       margin-top: u.rem(30);
-      grid-area: social;
+      cursor: pointer;
+
+      @include u.breakpoints-up(large) {
+        margin-top: 0;
+        margin-left: 100px;
+      }
 
       img {
         &:not(:last-child) {
@@ -49,10 +60,14 @@ footer {
     }
 
     .footer-copyright {
-      grid-area: copyright;
-      color: var(--White);
+      color: var(--Very-Dark-Gray);
       margin-top: u.rem(7);
       padding: 0;
+
+      @include u.breakpoints-up(large) {
+        margin-top: u.rem(22);
+        // margin-left: 7px;
+      }
     }
   }
 }

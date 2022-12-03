@@ -22,3 +22,20 @@ body {
   width: min(100% - u.rem(40), u.rem(1100));
   margin-inline: auto;
 }
+
+ul {
+  cursor: pointer;
+  li {
+    &:hover {
+      &::after {
+        content: "";
+        display: block;
+        margin-inline: auto;
+        width: 50%;
+        margin-top: u.rem(5);
+        border-bottom: 2px solid var(--White);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}

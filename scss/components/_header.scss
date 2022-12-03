@@ -3,13 +3,21 @@ header {
   background-image: url(/images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 75vh;
+  min-height: 80vh;
+
+  @include u.breakpoints-up(large) {
+    background-image: url(/images/desktop/image-hero.jpg);
+  }
 
   .header-heading {
     border: 2px solid var(--White);
-    margin-top: u.rem(85);
+    margin-top: u.rem(149.008);
     padding: u.rem(30) u.rem(30) u.rem(15) u.rem(20);
     color: var(--White);
+
+    @include u.breakpoints-up(large) {
+      //need to fix the width
+    }
   }
 }
 
@@ -22,6 +30,9 @@ header {
   }
 
   &__hamburger {
+    @include u.breakpoints-up(large) {
+      display: none;
+    }
     &-close {
       display: none;
     }

@@ -3,7 +3,16 @@
 .nav {
   @include u.flex(row, space-between);
 
-  /*  &__list */
+  &__list {
+    @include u.flex(row, center);
+
+    &-items {
+      color: var(--White);
+      &:not(:last-child) {
+        margin-right: u.rem(20);
+      }
+    }
+  }
 }
 
 .creations {
@@ -16,15 +25,17 @@
 }
 
 .nav-footer {
-  // text-align: center;
+  .list {
+    ul {
+      @include u.breakpoints-up(large) {
+        display: flex;
 
-  &__flex {
-    // @include u.flex(column, space-between);
-    // gap: u.rem(25);
-    // margin-bottom: u.rem(15);
-
-    /*  &:last-of-type {
-      margin-bottom: u.rem(5);
-    } */
+        li {
+          &:not(:first-child) {
+            padding-left: u.rem(15);
+          }
+        }
+      }
+    }
   }
 }
