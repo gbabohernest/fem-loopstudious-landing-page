@@ -1,0 +1,30 @@
+@use "../utils/" as u;
+
+.nav {
+  @include u.flex(row, space-between);
+
+  /*  &__list */
+}
+
+.creations {
+  &-flex {
+    @include u.breakpoints-up(large) {
+      @include u.flex(row, space-between);
+    }
+    margin-bottom: u.rem(35);
+  }
+}
+
+.nav-footer {
+  // text-align: center;
+
+  &__flex {
+    // @include u.flex(column, space-between);
+    // gap: u.rem(25);
+    // margin-bottom: u.rem(15);
+
+    /*  &:last-of-type {
+      margin-bottom: u.rem(5);
+    } */
+  }
+}

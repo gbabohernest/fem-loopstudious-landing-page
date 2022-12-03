@@ -1,0 +1,58 @@
+@use "../utils/" as u;
+footer {
+  margin-top: u.rem(80);
+  padding-bottom: u.rem(15);
+  background-color: var(--Black);
+  color: var(--White);
+
+  .attribution {
+    margin-top: u.rem(20);
+
+    a {
+      color: var(--Dark-Gray);
+    }
+  }
+}
+
+.nav-footer {
+  padding-top: u.rem(46);
+  text-align: center;
+  //   padding-bottom: u.rem(30);
+
+  &__grid {
+    .footer-logo {
+      grid-area: logo;
+    }
+
+    .list {
+      margin-top: u.rem(30);
+      grid-area: list;
+
+      ul {
+        li {
+          &:not(:last-child) {
+            padding-bottom: u.rem(20);
+          }
+        }
+      }
+    }
+
+    &-social-links {
+      margin-top: u.rem(30);
+      grid-area: social;
+
+      img {
+        &:not(:last-child) {
+          padding-right: u.rem(17);
+        }
+      }
+    }
+
+    .footer-copyright {
+      grid-area: copyright;
+      color: var(--White);
+      margin-top: u.rem(7);
+      padding: 0;
+    }
+  }
+}

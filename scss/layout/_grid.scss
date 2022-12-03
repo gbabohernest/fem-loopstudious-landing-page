@@ -1,0 +1,23 @@
+@use "../utils/" as u;
+
+.creations-grid {
+  display: grid;
+  gap: u.rem(25);
+}
+
+/* .nav-footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, u.rem(40));
+  place-items: center;
+
+  // gap: u.rem(13.008);
+  gap: 6.5rem;
+
+  grid-template-areas:
+    "logo"
+    "list"
+    "social"
+    "copyright";
+}
+ */
