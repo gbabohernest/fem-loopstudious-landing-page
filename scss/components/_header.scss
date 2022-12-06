@@ -3,7 +3,7 @@ header {
   background-image: url(/images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 80vh;
+  min-height: 70vh;
 
   @include u.breakpoints-up(large) {
     background-image: url(/images/desktop/image-hero.jpg);
@@ -16,12 +16,22 @@ header {
     color: var(--White);
 
     @include u.breakpoints-up(large) {
-      //need to fix the width
+      border: none;
+      margin-top: 5.313rem;
+    }
+
+    h1 {
+      @include u.breakpoints-up(large) {
+        border: 1px solid white;
+        padding: 2.5rem 2.5rem 1.9rem 1.4rem;
+        margin-right: 32rem;
+      }
     }
   }
 }
 
 .nav {
+  position: relative;
   padding-top: u.rem(40);
   .hide-for-mobile {
     @include u.breakpoints-down(medium) {
@@ -30,11 +40,40 @@ header {
   }
 
   &__hamburger {
+    cursor: pointer;
     @include u.breakpoints-up(large) {
       display: none;
     }
     &-close {
       display: none;
     }
+  }
+}
+
+.dark-bg-header {
+  background: var(--Black);
+  min-height: 100vh;
+}
+
+.header-heading-close {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.open {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 283%;
+  left: 0%;
+  padding-left: u.rem(10);
+  a {
+    color: white;
+    padding-bottom: u.rem(31);
+    text-transform: uppercase;
+    font-size: u.rem(18);
   }
 }

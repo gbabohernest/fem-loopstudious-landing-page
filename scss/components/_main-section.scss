@@ -34,23 +34,28 @@
     @include u.breakpoints-up(large) {
       background-color: var(--White);
       position: absolute;
-      top: 106%;
-      left: 41%;
-      right: 22%;
+      top: 87%;
+      left: 39%;
+      right: 8%;
+      padding: 1.9rem 0 2rem 2rem;
       text-align: left;
 
-      padding: u.rem(82) 0 0 u.rem(64);
-
       h2 {
-        // padding-left: 0.4rem;
         padding-left: u.rem(6.4);
       }
+    }
+    @include u.breakpoints-up(x-large) {
+      top: 92%;
+      left: 40%;
+      right: 17%;
+      padding: 2rem 0 2.5rem 2rem;
+    }
 
-      p {
-        // padding: 1.25rem 0.625rem 0 0.625rem;
-        // padding-bottom: 0;
-        // needs to be checked
-      }
+    @include u.breakpoints-up(xx-large) {
+      top: 90%;
+      left: 42%;
+      right: 25%;
+      padding: 3.3rem 0 2.5rem 2rem;
     }
   }
 }
