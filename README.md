@@ -24,12 +24,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](/screenshots/mobile%20view%20ss.png), ![](/screenshots/desktop%20view.png)!,[](/screenshots/ipad%20view.png),
+![](/screenshots/desktop%20view.png)
+![](/screenshots/mobile%20view%20ss.png)
+![](/screenshots/ipad%20view.png)
 ![](/screenshots/hamburger-mobile%20view%20ss.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/gbabohernest/loopstudious-landing-page)
+- Solution URL: [Add solution URL here](https://github.com/gbabohernest/fem-loopstudious-landing-page)
 - Live Site URL: [Add live site URL here](https://gbabohernest.github.io/loopstudious-landing-page/)
 
 ## My process

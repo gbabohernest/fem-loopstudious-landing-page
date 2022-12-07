@@ -1,12 +1,12 @@
 @use "../utils/" as u;
 header {
-  background-image: url(/images/mobile/image-hero.jpg);
+  background-image: url(images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 70vh;
 
   @include u.breakpoints-up(large) {
-    background-image: url(/images/desktop/image-hero.jpg);
+    background-image: url(images/desktop/image-hero.jpg);
   }
 
   .header-heading {
