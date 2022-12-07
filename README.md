@@ -13,8 +13,6 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
   - [Continued development](#continued-development)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -26,16 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-![](/screenshots/mobile%20view%20ss.png)
-![](/screenshots/desktop%20view.png)
-![](/screenshots/ipad%20view.png)
+![](/screenshots/mobile%20view%20ss.png), ![](/screenshots/desktop%20view.png)!,[](/screenshots/ipad%20view.png),
 ![](/screenshots/hamburger-mobile%20view%20ss.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/gbabohernest/loopstudious-landing-page)
+- Live Site URL: [Add live site URL here](https://gbabohernest.github.io/loopstudious-landing-page/)
 
 ## My process
 
